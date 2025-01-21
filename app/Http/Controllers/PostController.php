@@ -119,4 +119,3 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Diubah!']);
     }
 }
-
