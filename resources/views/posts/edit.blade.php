@@ -27,7 +27,7 @@
                                 <label class="font-weight-bold">JUDUL</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title', $post->title) }}" placeholder="Masukkan Judul Post">
                             
-                                <!-- error message untuk title -->
+                                
                                 @error('title')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
@@ -39,7 +39,7 @@
                                 <label class="font-weight-bold">KONTEN</label>
                                 <textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5" placeholder="Masukkan Konten Post">{{ old('content', $post->content) }}</textarea>
                             
-                                <!-- error message untuk content -->
+                                
                                 @error('content')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
